@@ -5,7 +5,7 @@ from info import FSUB_CHANNEL_1, FSUB_CHANNEL_2, DATABASE_URI_1
 class Fsub_DB:
     def __init__(self):
         if DATABASE_URI_1:
-            self.client = motor.motor_asyncio.AsyncIOMotorClient(DATABASE_URI)
+            self.client = motor.motor_asyncio.AsyncIOMotorClient(DATABASE_URI_1)
             self.db = self.client["Fsub_DB"]
             self.col1 = self.db[str(FSUB_CHANNEL_1)]
             self.col2 = self.db[str(FSUB_CHANNEL_2)]
