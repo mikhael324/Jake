@@ -28,9 +28,9 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/451f038b4e7c2ddd
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
 
 #Req F Sub
-fsub_channel_1 = environ.get("FSUB_CHANNEL_1", "-1002476598721")
+fsub_channel_1 = environ.get("FSUB_CHANNEL_1", "-1002484522032")
 FSUB_CHANNEL_1 = int(fsub_channel) if fsub_channel and id_pattern.search(fsub_channel_1) else None
-fsub_channel_2 = environ.get("FSUB_CHANNEL_2", "-1002476598721")
+fsub_channel_2 = environ.get("FSUB_CHANNEL_2", "-1002466387559")
 FSUB_CHANNEL_2 = int(fsub_channel) if fsub_channel and id_pattern.search(fsub_channel_2) else None
 
 # Admins, Channels & Users
