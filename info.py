@@ -28,8 +28,10 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/451f038b4e7c2ddd
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
 
 #Req F Sub
-fsub_channel = environ.get("FSUB_CHANNEL", "-1002476598721")
-FSUB_CHANNEL = int(fsub_channel) if fsub_channel and id_pattern.search(fsub_channel) else None
+fsub_channel_1 = environ.get("FSUB_CHANNEL_1", "-1002476598721")
+FSUB_CHANNEL_1 = int(fsub_channel) if fsub_channel and id_pattern.search(fsub_channel_1) else None
+fsub_channel_2 = environ.get("FSUB_CHANNEL_2", "-1002476598721")
+FSUB_CHANNEL_2 = int(fsub_channel) if fsub_channel and id_pattern.search(fsub_channel_2) else None
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '894474870 1746132193').split()]
@@ -47,6 +49,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
 
 # MongoDB information
+DATABASE_URI_1 = environ.get('DATABASE_URI', "mongodb+srv://amalchristoc7:amalchristoc7@cluster0.3npv6oe.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://amalchristoc7:amalchristoc7@cluster0.3npv6oe.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
