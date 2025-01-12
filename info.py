@@ -34,7 +34,7 @@ fsub_channel_2 = environ.get("FSUB_CHANNEL_2", "-1002476598721")
 FSUB_CHANNEL_2 = int(fsub_channel) if fsub_channel and id_pattern.search(fsub_channel_2) else None
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '894474870 1746132193').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '894474870 1746132193 997743002').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
