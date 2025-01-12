@@ -30,7 +30,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a
 #Req F Sub
 FSUB_CHANNEL_1 = environ.get("FSUB_CHANNEL_1", "-1002438264097")
 FSUB_CHANNEL_1 = int(FSUB_CHANNEL_1) if FSUB_CHANNEL_1 and id_pattern.search(FSUB_CHANNEL_1) else None
-fsub_channel_2 = environ.get("FSUB_CHANNEL_2", "-1002466387559")
+FSUB_CHANNEL_2 = environ.get("FSUB_CHANNEL_2", "-1002466387559")
 FSUB_CHANNEL_2 = int(FSUB_CHANNEL_2) if FSUB_CHANNEL_2 and id_pattern.search(FSUB_CHANNEL_2) else None
 
 # Admins, Channels & Users
