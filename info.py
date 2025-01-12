@@ -29,9 +29,9 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a
 
 #Req F Sub
 fsub_channel_1 = environ.get("FSUB_CHANNEL_1", "-1002484522032")
-FSUB_CHANNEL_1 = int(fsub_channel) if fsub_channel and id_pattern.search(fsub_channel_1) else None
+FSUB_CHANNEL_1 = int(fsub_channel) if fsub_channel_1 and id_pattern.search(fsub_channel_1) else None
 fsub_channel_2 = environ.get("FSUB_CHANNEL_2", "-1002466387559")
-FSUB_CHANNEL_2 = int(fsub_channel) if fsub_channel and id_pattern.search(fsub_channel_2) else None
+FSUB_CHANNEL_2 = int(fsub_channel) if fsub_channel_2 and id_pattern.search(fsub_channel_2) else None
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '894474870 1746132193 997743002').split()]
