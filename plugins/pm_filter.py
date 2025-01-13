@@ -861,7 +861,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         except:
             typed = query.from_user.id
         ident, file_id = query.data.split("#")
-        if (FSUB_CHANNEL_1 and not await Force_Sub(client, query, file_id, FSUB_CHANNEL_1)) or (FSUB_CHANNEL_2 and not await Force_Sub(client, query, file_id, FSUB_CHANNEL_2)):
+        if (FSUB_CHANNEL_1 and not await Force_Sub(client, query, file_id)) or (FSUB_CHANNEL_2 and not await Force_Sub(client, query, file_id)):
              return await query.answer("Pehle dono channels ko join karein, phir refresh karein.", show_alert=True)
 
         files_ = await get_file_details(file_id)       
